@@ -5,24 +5,21 @@
 <%@ page import="vn.name.dcd.utils.SecurityUtils" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
-<div id="navbar" class="navbar navbar-default          ace-save-state">
+<div id="navbar" class="navbar navbar-default-ace-save-state" style="background-color:#343a40!important;">
     <div class="navbar-container ace-save-state" id="navbar-container">
         <div class="navbar-header pull-left">
-            <a href="<c:url value='/trang-chu'/>" class="navbar-brand">
-                <small>
-                    <i class="fa fa-leaf"></i>
-                    Trang chủ
-                </small>
-            </a>
+            <a class="navbar-brand" href="<c:url value='/trang-chu'/>"> <img height="auto" width="150px"
+			src="<c:url value='/template/img/logodc1.png'/>" alt="">
+		</a>
         </div>
         <div class="navbar-buttons navbar-header pull-right collapse navbar-collapse" role="navigation">
             <ul class="nav ace-nav">
                 <li class="light-blue dropdown-modal">
-                    <a data-toggle="dropdown" href="#" class="dropdown-toggle">
-                        Xin chào,<%=SecurityUtils.getPrincipal().getFullname()%>
+                    <a data-toggle="dropdown" href="#" class="dropdown-toggle"  style="background-color: #808080">
+                        Xin chào <%=SecurityUtils.getPrincipal().getFullname()%>
                     </a>
                     <li class="light-blue dropdown-modal">
-                        <a href="<c:url value='/thoat'/>">
+                        <a href="<c:url value='/thoat'/>"  style="background-color: #808080">
                             <i class="ace-icon fa fa-power-off"></i>
                             Thoát
                         </a>

@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java"%>
 <%@include file="/common/taglib.jsp"%>
-<c:url var="newURL" value="//quan-tri/danh-sach-san-pham" />
+<c:url var="newURL" value="/quan-tri/danh-sach-san-pham" />
 <c:url var="editNewURL" value="/quan-tri/bai-viet/chinh-sua" />
 <c:url var="newAPI" value="/api/product" />
 <html>
@@ -31,8 +31,8 @@
 				<div class="row">
 					<div class="col-xs-12">
 						<c:if test="${not empty message}">
-							<div class="alert alert-${alert}">${message}</div>
-						</c:if>
+								<div class="alert alert-${alert}">${message}</div>
+							</c:if>
 						<form:form class="form-horizontal" role="form" id="formSubmit"
 							modelAttribute="model" enctype="multipart/form-data">
 							<div class="form-group">
@@ -66,8 +66,8 @@
 								<label for="content"
 									class="col-sm-3 control-label no-padding-right">Mô tả</label>
 								<div class="col-sm-9">
-									<form:textarea path="mota" rows="" cols="" style="height: 120px;width: 411px"
-										cssClass="form-control" />
+									<form:textarea path="mota" rows="" cols=""
+										style="height: 120px;width: 411px" cssClass="form-control" />
 								</div>
 							</div>
 							<div class="form-group">
@@ -75,8 +75,9 @@
 									class="col-sm-3 control-label no-padding-right">Nội
 									dung:</label>
 								<div class="col-sm-9">
-									<form:textarea path="content"  rows="" cols="" style="height: 120px;width: 411px"
-										cssClass="form-control" id="content" />
+									<form:textarea path="content" rows="" cols=""
+										style="height: 120px;width: 411px" cssClass="form-control"
+										id="content" />
 								</div>
 							</div>
 							<form:hidden path="id" id="newId" />
@@ -97,9 +98,10 @@
 									</c:if>
 
 									&nbsp; &nbsp; &nbsp;
-									<button class="btn" type="reset" >
+									<button class="btn" type="reset">
 										<i class="ace-icon fa fa-undo bigger-110"></i> Hủy
 									</button>
+									 <a href="<c:url value='/quan-tri/danh-sach-san-pham'/>" class="ace-icon fa fa-undo bigger-110">Trở về danh sách</a>
 								</div>
 							</div>
 						</form:form>
@@ -127,7 +129,7 @@
 			if (files != undefined) {
 				var reader = new FileReader();
 				reader.onload = function(e) {
-					dataArray["base64"] = e.target.result;
+					dataArray["base64"] = (e.target.result).split(",")[1];
 					dataArray["hinhanh"] = files.name;
 					formData.push({
 						name : "base64",
@@ -162,10 +164,10 @@
 				data : JSON.stringify(data),
 				dataType : 'json',
 				success : function(result) {
-					window.location.href = "${newURL}?";
+					window.location.href = "${newURL}?&message=insert_success";
 				},
 				error : function(error) {
-					window.location.href = "${newURL}?";
+					window.location.href = "${newURL}?&message=error_system";
 				}
 			});
 		}
@@ -178,27 +180,14 @@
 				data : JSON.stringify(data),
 				dataType : 'json',
 				success : function(result) {
-					window.location.href = "${newURL}?";
+					window.location.href = "${newURL}?&message=update_success";
 				},
 				error : function(error) {
-					window.location.href = "${newURL}?";
+					window.location.href = "${newURL}?&message=error_system";
 				}
 			});
 		}
-		function uploadFile(data) {
-			$.ajax({
-				url : '${newAPI}',
-				type : 'POST',
-				data : JSON.stringify(data),
-				contentType : 'application/json',
-				success : function(result) {
-					window.location.href = "${newURL}?";
-				},
-				error : function(error) {
-					window.location.href = "${newURL}?";
-				}
-			});
-		}
+		
 	</script>
 </body>
 </html>

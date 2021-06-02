@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 public class CommonConstant {
 
 	//public  final String root = "/template/assets/img";
-	public final static String root = "D:/usr/var";
+	public final static String root = "D:/javaweb/name.vn/src/main/webapp/template/assets/img";
 	
 	public void writeOrUpdate(byte[] bytes, String path) {
 		 File file = new File(StringUtils.substringBeforeLast(root + path, "/"));

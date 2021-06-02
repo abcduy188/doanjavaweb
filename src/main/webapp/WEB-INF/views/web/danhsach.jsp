@@ -22,7 +22,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-6">
-					<img alt="anh" src="../template/img/${model.hinhanh}" class="img-fluid">
+					<img alt="anh" src="../template/assets/img/thumbnail/${model.hinhanh}" class="img-fluid">
 				</div>
 				<div class="col-6">
 					<h3>${model.tensp}</h3>

@@ -4,6 +4,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.repository.query.Param;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler;
@@ -14,7 +15,8 @@ import org.springframework.web.servlet.ModelAndView;
 
 import vn.name.dcd.DTO.ProductDTO;
 import vn.name.dcd.service.IProductService;
-@RestController(value="APIOfWeb")
+
+@RestController(value = "APIOfWeb")
 public class HomeAPI {
 	@Autowired
 	private IProductService productService;
@@ -45,25 +47,33 @@ public class HomeAPI {
 		return new ModelAndView("redirect:/dang-nhap?accessDenied");
 	}
 
-
 	@GetMapping(value = "/trang-chu/trang-ao")
-	public ModelAndView aoPage() {
+	public ModelAndView aoPage(@Param("keyword") String keyword) {
 		ProductDTO model = new ProductDTO();
 		ModelAndView mav = new ModelAndView("web/ao");
-		model.setListResult(productService.findAll());
+		model.setListResult(productService.findAll(keyword));
+		mav.addObject("keyword", keyword);
 		mav.addObject("model", model);
 		return mav;
 	}
 
 	@GetMapping(value = "/trang-chu/trang-quan")
-	public ModelAndView quanPage() {
+	public ModelAndView quanPage(@Param("keyword") String keyword) {
 		ProductDTO model = new ProductDTO();
 		ModelAndView mav = new ModelAndView("web/quan");
-		model.setListResult(productService.findAll());
+		model.setListResult(productService.findAll(keyword));
 		mav.addObject("model", model);
 		return mav;
 	}
-
+	@GetMapping(value = "/trang-chu/list")
+	public ModelAndView listPage(@Param("keyword") String keyword) {
+		ProductDTO model = new ProductDTO();
+		ModelAndView mav = new ModelAndView("web/list");
+		model.setListResult(productService.findAll(keyword));
+		mav.addObject("keyword", keyword);
+		mav.addObject("model", model);
+		return mav;
+	}
 	@GetMapping(value = "/trang-chu/danh-sach")
 	public ModelAndView editNew(@RequestParam(value = "id", required = false) Long id, HttpServletRequest request) {
 		ModelAndView mav = new ModelAndView("web/danhsach");

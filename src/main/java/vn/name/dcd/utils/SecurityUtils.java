@@ -12,13 +12,12 @@ public class SecurityUtils {
 	
 	public static MyAccount getPrincipal() {
 		MyAccount myAccount = (MyAccount) (SecurityContextHolder.getContext()).getAuthentication().getPrincipal();
-        return myAccount; //lay thong tin tu Principal(Spring security) luu vao myAccount, import myAccount ở .jsp de get thong tin
+        return myAccount; 
     }
-	public static List<String> getAuthorities() /* code chuoi => listString*/
+	public static List<String> getAuthorities() 
 	{
 		List<String> results= new ArrayList<>();
 		@SuppressWarnings("unchecked")
-		//get code push form customuserdetails then => customsucceshandler
 		List<GrantedAuthority> authorities = (List<GrantedAuthority>)(SecurityContextHolder.getContext().getAuthentication().getAuthorities());
         for (GrantedAuthority authority : authorities) {
             results.add(authority.getAuthority());

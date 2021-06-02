@@ -86,7 +86,7 @@
 					<div class="col-6 col-md-3">
 						<div class="newIn__item">
 							<div class="newIn__info">
-								<img class="img-fluid" src="template/img/n1.jpg" alt="">
+								<img class="img-fluid" src="template/assets/img/thumbnail/n1.jpg" alt="">
 								<div class="newIn__overlay"></div>
 								<div class="newIn__detail">
 									<i class="fa fa-play"></i> <a href="#">MORE INFORMATION</a>
@@ -104,7 +104,7 @@
 					<div class="col-6  col-md-3">
 						<div class="newIn__item">
 							<div class="newIn__info">
-								<img class="img-fluid" src="template//img/n2.jpg" alt="">
+								<img class="img-fluid" src="template/assets/img/thumbnail/n2.jpg" alt="">
 								<div class="newIn__overlay"></div>
 								<div class="newIn__detail">
 									<i class="fa fa-play"></i> <a href="#">MORE INFORMATION</a>
@@ -122,7 +122,7 @@
 					<div class="col-6  col-md-3">
 						<div class="newIn__item">
 							<div class="newIn__info">
-								<img class="img-fluid" src="template/img/n3.jpg" alt="">
+								<img class="img-fluid" src="template/assets/img/thumbnail/n3.jpg" alt="">
 								<div class="newIn__overlay"></div>
 								<div class="newIn__detail">
 									<i class="fa fa-play"></i> <a href="#">MORE INFORMATION</a>
@@ -140,7 +140,7 @@
 					<div class="col-6  col-md-3">
 						<div class="newIn__item">
 							<div class="newIn__info">
-								<img class="img-fluid" src="template/img/n4.jpg" alt="">
+								<img class="img-fluid" src="template/assets/img/thumbnail/n4.jpg" alt="">
 								<div class="newIn__overlay"></div>
 								<div class="newIn__detail">
 									<i class="fa fa-play"></i> <a href="#">MORE INFORMATION</a>

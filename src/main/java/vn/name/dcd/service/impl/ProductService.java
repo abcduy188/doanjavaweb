@@ -26,7 +26,16 @@ public class ProductService implements IProductService {
 	private CategoryRepository categoryRepository;
 
 	@Override
-	public List<ProductDTO> findAll() {
+	public List<ProductDTO> findAll(String keyword) {
+		if (keyword != null) {
+			List<ProductDTO> models = new ArrayList<>();
+			List<ProductEntity> entities = productRepositpory.search(keyword);
+			for (ProductEntity item : entities) {
+				ProductDTO productDTO = productConverter.toDto(item);
+				models.add(productDTO);
+			}
+			return models;
+		}
 		List<ProductDTO> models = new ArrayList<>();
 		List<ProductEntity> entities = productRepositpory.findAll();
 		for (ProductEntity item : entities) {
@@ -57,5 +66,11 @@ public class ProductService implements IProductService {
 		}
 		return productConverter.toDto(productRepositpory.save(productEntity));
 	}
-
+	@Override
+	@Transactional
+	public void delete(long[] ids) {
+		for (long id: ids) {
+			productRepositpory.delete(id);
+		}
+	}
 }

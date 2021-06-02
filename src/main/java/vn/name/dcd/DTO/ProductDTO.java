@@ -1,8 +1,5 @@
 package vn.name.dcd.DTO;
 
-/*DTO =model khi dung model khong biet model la dto hay entity*/
-/*DTO tranfer data giua API-client hoac controller-view
-entity mapping tables o database*/
 public class ProductDTO extends AbstractDTO<ProductDTO> {
 	private String tensp;
 	private String mota;
@@ -10,7 +7,7 @@ public class ProductDTO extends AbstractDTO<ProductDTO> {
 	private String hinhanh;
 	private String base64;
 	public String getBase64() {
-		return base64.split(",")[1];
+		return base64;
 	}
 	public void setBase64(String base64) {
 		this.base64 = base64;
