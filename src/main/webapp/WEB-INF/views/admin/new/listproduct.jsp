@@ -9,16 +9,32 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Danh sách Danh mục</title>
+<link rel="stylesheet"
+	href="<c:url value='/template/admin/css/validate-customer.css' />" />
 </head>
 
 <body>
 	<div class="main-content">
-		<div style="background-color: #343a40 !important;">
-			<form action="<c:url value='/quan-tri/danh-sach-san-pham'/>">
-				<b style="color: silver;">Tìm kiếm: </b> <input type="text" name="keyword" id="keyword"
-					size="30" value="${keyword}" required /> &nbsp; <input
-					type="submit" value="Search" /> &nbsp; <input type="button"
-					value="Clear" id="btnClear" onclick="clearSearch()" />
+		<div
+			style="background: linear-gradient(-135deg, #c850c0, #4158d0);">
+			<form class="card card-sm" action="<c:url value='/quan-tri/danh-sach-san-pham'/>">
+				<div class="card-body row no-gutters align-items-center">
+					<div class="col-sm-6">
+						<i class="fas fa-search h4 text-body"></i>
+					</div>
+					<!--end of col-->
+					<div class="col-sm-3">
+						<input
+							class="form-control form-control-lg form-control-borderless"
+							type="text" name="keyword" id="keyword" placeholder="Tìm kiếm theo tên..." value="${keyword}" required />
+					</div>
+					<!--end of col-->
+					<div class="col-auto">
+						&nbsp;<button class="btn btn-lg btn-success" type="submit">Search</button> &nbsp;
+						<button class="btn btn-lg btn-success" type="button" id="btnClear" onclick="clearSearch()">Quay lại</button>
+					</div>
+					<!--end of col-->
+				</div>
 			</form>
 		</div>
 		<form action="<c:url value='/quan-tri/danh-sach-san-pham'/>"

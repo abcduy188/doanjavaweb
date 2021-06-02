@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@include file="/common/taglib.jsp"%>
-<c:url var="newURL" value="/trang-chu/trang-ao" />
+<c:url var="newURL" value="/trang-chu" />
 <!DOCTYPE html>
 
 <html lang="en">
@@ -23,11 +23,24 @@
 <body>
 	<section class="showTime">
 		<div class="container">
-			<form action="<c:url value='/trang-chu/list'/>">
-				Filter: <input type="text" name="keyword" id="keyword" size="50"
-					th:value="${keyword}" required /> &nbsp; <input type="submit"
-					value="Search" /> &nbsp; <input type="button" value="Clear"
-					id="btnClear" onclick="clearSearch()" />
+			<form class="card card-sm" action="<c:url value='/trang-chu/list'/>">
+				<div class="card-body row no-gutters align-items-center">
+					<div class="col-auto">
+						<i class="fas fa-search h4 text-body"></i>
+					</div>
+					<!--end of col-->
+					<div class="col">
+						<input
+							class="form-control form-control-lg form-control-borderless"
+							type="text" name="keyword" id="keyword" placeholder="Search topics or keywords" value="${keyword}" required />
+					</div>
+					<!--end of col-->
+					<div class="col-auto">
+						&nbsp;<button class="btn btn-lg btn-success" type="submit">Search</button> &nbsp;
+						<button class="btn btn-lg btn-success" type="button" id="btnClear" onclick="clearSearch()">Quay lại</button>
+					</div>
+					<!--end of col-->
+				</div>
 			</form>
 			
 					<c:forEach var="item" items="${model.listResult}">

@@ -19,15 +19,43 @@
 <link rel="stylesheet"
 	href="<c:url value='/template/web/css/index.css'/>">
 <title>Hello, world!</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	crossorigin="anonymous">
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+	integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+	crossorigin="anonymous">
+
 </head>
 <body>
 	<section class="showTime">
 		<div class="container">
-			<form action="<c:url value='/trang-chu/list'/>">
+			<%-- <form action="<c:url value='/trang-chu/list'/>">
 				Tìm kiếm: <input type="text" name="keyword" id="keyword" size="50"
 					th:value="${keyword}" required /> &nbsp; <input type="submit"
 					value="Tìm" /> &nbsp; <input type="button" value="Xóa"
 					id="btnClear" onclick="clearSearch()" />
+			</form> --%>
+			<form class="card card-sm" action="<c:url value='/trang-chu/list'/>">
+				<div class="card-body row no-gutters align-items-center">
+					<div class="col-auto">
+						<i class="fas fa-search h4 text-body"></i>
+					</div>
+					<!--end of col-->
+					<div class="col">
+						<input
+							class="form-control form-control-lg form-control-borderless"
+							type="text" name="keyword" id="keyword" placeholder="Search topics or keywords" value="${keyword}" required />
+					</div>
+					<!--end of col-->
+					<div class="col-auto">
+						&nbsp;<button class="btn btn-lg btn-success" type="submit">Search</button> &nbsp;
+						<button class="btn btn-lg btn-success" type="button" id="btnClear" onclick="clearSearch()">Quay lại</button>
+					</div>
+					<!--end of col-->
+				</div>
 			</form>
 			<ul class="nav nav-tabs" id="myTab" role="tablist"
 				style="padding-top: 100px;">

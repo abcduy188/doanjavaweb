@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@include file="/common/taglib.jsp"%>
+<c:url var="newURL" value="/trang-chu/trang-quan" />
 <!DOCTYPE html>
 
 <html>
@@ -12,6 +13,25 @@
 <body>
 	<section class="showTime">
 		<div class="container">
+		<form class="card card-sm" action="<c:url value='/trang-chu/list'/>">
+				<div class="card-body row no-gutters align-items-center">
+					<div class="col-auto">
+						<i class="fas fa-search h4 text-body"></i>
+					</div>
+					<!--end of col-->
+					<div class="col">
+						<input
+							class="form-control form-control-lg form-control-borderless"
+							type="text" name="keyword" id="keyword" placeholder="Search topics or keywords" value="${keyword}" required />
+					</div>
+					<!--end of col-->
+					<div class="col-auto">
+						&nbsp;<button class="btn btn-lg btn-success" type="submit">Search</button> &nbsp;
+						<button class="btn btn-lg btn-success" type="button" id="btnClear" onclick="clearSearch()">Quay lại</button>
+					</div>
+					<!--end of col-->
+				</div>
+			</form>
 			<ul class="nav nav-tabs" id="myTab" role="tablist"
 				style="padding-top: 100px;">
 				<li class="nav-item" role="presentation"><a class="nav-link"
@@ -286,6 +306,11 @@
 			</div>
 		</div>
 	</section>
+	<script type="text/javascript">
+		function clearSearch() {
+			window.location.href = "${newURL}";
+		}
+	</script>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
 		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
 		crossorigin="anonymous"></script>
