@@ -6,6 +6,7 @@
 <html>
 <head>
 <title>Chỉnh sửa bài viết</title>
+<link rel="icon" type="image/png" href="<c:url value='/template/login/images/icons/edit.ico'/>" />
 </head>
 <body>
 	<div class="main-content">

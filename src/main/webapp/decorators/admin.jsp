@@ -31,7 +31,7 @@
 <script src="https://cdn.ckeditor.com/4.16.1/full-all/ckeditor.js"></script>
 <!-- sweetalert delete -->
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
+<link rel="icon" type="image/png" href="<c:url value='/template/login/images/icons/admin.ico'/>" />
 </head>
 <body class="no-skin">
 	<!-- header -->
