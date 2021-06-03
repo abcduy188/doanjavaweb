@@ -7,6 +7,7 @@
 <html>
 
 <head>
+
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Danh sách Danh mục</title>
 <link rel="stylesheet"
@@ -14,41 +15,11 @@
 </head>
 
 <body>
-	<div class="main-content">
-		<div
-			style="background: linear-gradient(-135deg, #c850c0, #4158d0);">
-			<form class="card card-sm" action="<c:url value='/quan-tri/danh-sach-san-pham'/>">
-				<div class="card-body row no-gutters align-items-center">
-					<div class="col-sm-6">
-						<i class="fas fa-search h4 text-body"></i>
-					</div>
-					<!--end of col-->
-					<div class="col-sm-3">
-						<input
-							class="form-control form-control-lg form-control-borderless"
-							type="text" name="keyword" id="keyword" placeholder="Tìm kiếm theo tên..." value="${keyword}" required />
-					</div>
-					<!--end of col-->
-					<div class="col-auto">
-						&nbsp;<button class="btn btn-lg btn-success" type="submit">Search</button> &nbsp;
-						<button class="btn btn-lg btn-success" type="button" id="btnClear" onclick="clearSearch()">Quay lại</button>
-					</div>
-					<!--end of col-->
-				</div>
-			</form>
-		</div>
+	<div class="main-content" >
 		<form action="<c:url value='/quan-tri/danh-sach-san-pham'/>"
 			id="formSubmit" method="get">
 			<div class="main-content-inner">
-				<!-- <div class="breadcrumbs ace-save-state" id="breadcrumbs"
-					style="background-color: #343a40 !important;">
-					<ul class="breadcrumb">
-						<li><i class="ace-icon fa fa-home home-icon"
-							style="color: silver;"></i> <a href="#" style="color: silver;">Trang
-								chủ</a></li>
-					</ul>
-					/.breadcrumb
-				</div> -->
+
 				<div class="page-content">
 					<div class="row">
 						<div class="col-xs-12">
@@ -56,6 +27,24 @@
 								<div class="alert alert-${alert}">${message}</div>
 							</c:if>
 							<div class="widget-box table-filter">
+								<!-- timkiem -->
+								<div style="list-style: none; border-radius: 30px;">
+									<div class="col-sm-6">
+										<input
+											class="form-control form-control-lg form-control-borderless"
+											type="text" name="keyword" id="keyword"
+											placeholder="Tìm kiếm theo tên..." value="${keyword}"
+											required />
+									</div>
+									<div class="col-auto">
+										&nbsp;
+										<button class="btn btn-lg btn-success" type="submit" >Search</button>
+										&nbsp;
+										<button class="btn btn-lg btn-success" type="button"
+											id="btnClear" onclick="clearSearch()">Quay lại</button>
+									</div>
+								</div>
+								<!-- end of search -->
 								<div class="table-btn-controls">
 									<div class="pull-right tableTools-container">
 										<div class="dt-buttons btn-overlap btn-group">
@@ -79,12 +68,13 @@
 									</div>
 								</div>
 							</div>
-							<div class="row">
+							<div class="row" >
 								<div class="col-xs-12">
-									<div class="table-responsive">
+									<div class="table-responsive" style="border-radius: 30px">
 										<table class="table table-bordered">
 											<thead>
-												<tr>
+												<tr
+													style="background: linear-gradient(180deg, #f9bd05, #fee188); font-size: 20px;">
 													<th><input type="checkbox" id="checkAll"></th>
 													<th>Tên sản phẩm</th>
 													<th>Mô tả</th>
@@ -99,11 +89,11 @@
 													<tr>
 														<td><input type="checkbox" id="checkbox_${item.id}"
 															class="checkitem" value="${item.id}"></td>
-														<td>${item.tensp}</td>
+														<td><b style="font-size: 15px">${item.tensp}</b></td>
 														<td>${item.mota}</td>
 														<td><img
 															src="<c:url value='/template/assets/img/thumbnail/${item.hinhanh}'/>"
-															alt="${item.hinhanh}" height="20px" width="20px"></td>
+															alt="${item.hinhanh}" height="70px" width="60px"></td>
 														<td>${item.categoryCode}</td>
 														<td><c:url var="updateNewURL"
 																value="/quan-tri/san-pham/chinh-sua">

@@ -11,12 +11,12 @@
         <div class="breadcrumbs ace-save-state" id="breadcrumbs" style="background-color: #343a40!important;">
             <ul class="breadcrumb" >
                 <li>
-                    <i class="ace-icon fa fa-home home-icon"style="color: silver;"></i>
+                    <i class="ace-icon fa fa-home home-icon"style="background-image: url('../template/assets/img/thumbnail/missJiphone.jpg')"></i>
                     <a href="#"  style="color: silver;">Trang chủ</a>
                 </li>
             </ul><!-- /.breadcrumb -->
         </div>
-        <img alt="anh" src="D:\usr\var\thumbnail\2.jpg">
+        <img alt="anh" src="../template/assets/img/thumbnail/missJiphone.jpg">
         <div class="page-content">
             <div class="row" >
                 <div class="col-xs-12">

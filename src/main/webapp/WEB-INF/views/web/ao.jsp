@@ -32,12 +32,6 @@
 <body>
 	<section class="showTime">
 		<div class="container">
-			<%-- <form action="<c:url value='/trang-chu/list'/>">
-				Tìm kiếm: <input type="text" name="keyword" id="keyword" size="50"
-					th:value="${keyword}" required /> &nbsp; <input type="submit"
-					value="Tìm" /> &nbsp; <input type="button" value="Xóa"
-					id="btnClear" onclick="clearSearch()" />
-			</form> --%>
 			<form class="card card-sm" action="<c:url value='/trang-chu/list'/>">
 				<div class="card-body row no-gutters align-items-center">
 					<div class="col-auto">
@@ -47,12 +41,15 @@
 					<div class="col">
 						<input
 							class="form-control form-control-lg form-control-borderless"
-							type="text" name="keyword" id="keyword" placeholder="Search topics or keywords" value="${keyword}" required />
+							type="text" name="keyword" id="keyword" placeholder="Tìm kiếm theo tên sản phẩm..." value="${keyword}" required />
 					</div>
 					<!--end of col-->
 					<div class="col-auto">
-						&nbsp;<button class="btn btn-lg btn-success" type="submit">Search</button> &nbsp;
-						<button class="btn btn-lg btn-success" type="button" id="btnClear" onclick="clearSearch()">Quay lại</button>
+						&nbsp;
+						<button class="btn btn-lg btn-success" type="submit"
+							style="background: linear-gradient(-135deg, #c850c0, #4158d0);">Search</button>
+						&nbsp;
+						<button class="btn btn-lg btn-success" style="background:  linear-gradient(-135deg, #c850c0, #4158d0);" type="button" id="btnClear" onclick="clearSearch()">Quay lại</button>
 					</div>
 					<!--end of col-->
 				</div>

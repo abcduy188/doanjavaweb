@@ -5,12 +5,8 @@
 #fullName-error {
     color: #cc300c;
 }
-.form-control-borderless {
-    border: none;
+.form-control form-control-lg form-control-borderless{
+	list-style: none;
+	 border-radius: 30px;
 }
 
-.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
-    border: none;
-    outline: none;
-    box-shadow: none;
-}
