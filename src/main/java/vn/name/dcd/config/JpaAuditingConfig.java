@@ -8,22 +8,21 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 
 @Configuration
-@EnableJpaAuditing(auditorAwareRef = "auditorProvider") // bat tinh nang cua jpa auditing
+@EnableJpaAuditing(auditorAwareRef = "auditorProvider")
 public class JpaAuditingConfig {
 
 	@Bean
 	public AuditorAware<String> auditorProvider() {
 		return new AuditorAwareImpl();
 	}
-
 //return name user login , fill for get in baseentity
 	public static class AuditorAwareImpl implements AuditorAware<String> {
 
 		@Override
-		public String getCurrentAuditor() { // get username
+		public String getCurrentAuditor() {
 			Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 			if (authentication == null) {
-				return null; // khong dang nhap v.v
+				return null;
 			}
 			return authentication.getName();
 		}

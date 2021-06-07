@@ -37,9 +37,6 @@ public class CustomSuccessHandler extends SimpleUrlAuthenticationSuccessHandler{
 
 	private String determineTargetUrl(Authentication authentication) {
 		String url="";
-		//if CODE in CustomUserDetailsService = admin => chuyen toi controller: /quan-tri/trang-chu/
-		//if CODE in CustomUserDetailsService = user => chuyen toi controller: /trang-chu/
-		//get role from CustomUserDetailsService => utils
 		List<String> roles = SecurityUtils.getAuthorities();
 		if(isAdmin(roles))
 		{
@@ -50,7 +47,6 @@ public class CustomSuccessHandler extends SimpleUrlAuthenticationSuccessHandler{
 		}
 		return url;
 	}
-	//2 ham` check admin or user then push len
 	private boolean isAdmin(List<String> roles)
 	{	
 		if(roles.contains("ADMIN"))

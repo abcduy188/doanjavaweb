@@ -8,21 +8,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Bootstrap CSS -->
-<link
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-	rel="stylesheet"
-	integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-	crossorigin="anonymous">
-
-<title>Hello, world!</title>
 </head>
 <body>
 	<section style="padding-top: 100px">
 		<div class="container">
 			<div class="row">
 				<div class="col-6">
-					<img alt="anh" src="../template/assets/img/thumbnail/${model.hinhanh}" class="img-fluid">
+					<img alt="anh"
+						src="../template/assets/img/thumbnail/${model.hinhanh}"
+						class="img-fluid">
 				</div>
 				<div class="col-6">
 					<h3>${model.tensp}</h3>
@@ -35,7 +29,7 @@
                         </svg> <span>(185 đánh giá)</span>
 					</a>
 					<h4>${model.mota}</h4>
-										<h4>Video Review</h4>
+					<h4>Video Review</h4>
 					<iframe width="500" height="300"
 						src="https://www.youtube.com/embed/uZvN3F2wWf0" frameborder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -46,22 +40,59 @@
 			<div>
 				<hr>
 				<h4>${model.content}</h4>
-				
 			</div>
+			<h1 style="text-align: center;">HƯỚNG DẪN CHỌN SIZE CHUẨN</h1>
+			<c:if test="${model.categoryCode == 'ao-so-mi'}">
+				<div>
+					<h4 style="text-align: center;">
+						<span class="text--bold">Áo Sơ mi nam</span>
+					</h4>
+					<img src="../template/img/sizesomi.jpg" alt="size áo sơ mi"
+						height="500px" width="auto">
+				</div>
+			</c:if>
+			<c:if test="${model.categoryCode == 'ao-po-lo'}">
+				<div>
+					<h4 style="text-align: center;">
+						<span class="text--bold">Áo POLO</span>
+					</h4>
+					<img src="../template/img/sizeaopolo.jpg" alt="size áo sơ mi"
+						height="490px" width="auto">
+				</div>
+			</c:if>
+			<c:if test="${model.categoryCode == 'ao-cotton-dai-tay'}">
+				<div>
+					<h4 style="text-align: center;">
+						<span class="text--bold">Áo Cotton dài tay</span>
+					</h4>
+					<img src="../template/img/sizethundai.jpg" alt="size áo sơ mi"
+						height="500px" width="auto">
+				</div>
+			</c:if>
+			<c:if test="${model.categoryCode == 'ao-cotton-ngan-tay'}">
+				<div>
+					<h4 style="text-align: center;">
+						<span class="text--bold">Áo Cotton ngắn tay</span>
+					</h4>
+					<img src="../template/img/sizethunngan.jpg" alt="size áo sơ mi"
+						height="480px" width="auto">
+				</div>
+			</c:if>
+			<c:if test="${model.categoryCode == 'ao-the-thao'}">
+				<div>
+					<h4 style="text-align: center;">
+						<span class="text--bold">Áo Thể Thao</span>
+					</h4>
+					<img src="../template/img/sizethethao.jpg" alt="size áo sơ mi"
+						height="500px" width="auto">
+				</div>
+			</c:if>
 		</div>
 	</section>
-	<!-- Optional JavaScript; choose one of the two! -->
-
-	<!-- Option 1: Bootstrap Bundle with Popper -->
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
 		crossorigin="anonymous"></script>
 
-	<!-- Option 2: Separate Popper and Bootstrap JS -->
-	<!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
-    -->
 </body>
 </html>
