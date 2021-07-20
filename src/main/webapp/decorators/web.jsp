@@ -14,8 +14,10 @@
 	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 	crossorigin="anonymous">
 <!-- 	MAIN CSS -->
-<link rel="stylesheet" href="<c:url value='/template/web/css/index.css'/>">
-<link rel="icon" type="image/png" href="<c:url value='/template/login/images/icons/ao.ico'/>" />
+<link rel="stylesheet"
+	href="<c:url value='/template/web/css/index.css'/>">
+<link rel="icon" type="image/png"
+	href="<c:url value='/template/login/images/icons/ao.ico'/>" />
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
 	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
@@ -24,12 +26,15 @@
 	href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
 	integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
 	crossorigin="anonymous">
+<script type="text/javascript"
+	src="https://platform-api.sharethis.com/js/sharethis.js#property=60b7a857cfae6e001124935b&product=inline-share-buttons"
+	async="async"></script>
 <title>DCD Fashion</title>
 
 </head>
 <body>
- <%@ include file="/common/web/header.jsp"%>
-<dec:body/>
- <%@ include file="/common/web/footer.jsp"%>
+	<%@ include file="/common/web/header.jsp"%>
+	<dec:body />
+	<%@ include file="/common/web/footer.jsp"%>
 </body>
 </html>

@@ -29,10 +29,13 @@
 					<!--end of col-->
 					<div class="col-auto">
 						&nbsp;
-						<button class="btn btn-lg btn-success" type="submit">Search</button>
+						<button class="btn btn-lg btn-success" type="submit"
+							style="background: linear-gradient(-135deg, #c850c0, #4158d0);">Search</button>
 						&nbsp;
-						<button class="btn btn-lg btn-success" type="button" id="btnClear"
-							onclick="clearSearch()">Quay lại</button>
+						<button class="btn btn-lg btn-success"
+							style="background: linear-gradient(-135deg, #c850c0, #4158d0);"
+							type="button" id="btnClear" onclick="clearSearch()">Quay
+							lại</button>
 					</div>
 					<!--end of col-->
 				</div>
@@ -68,22 +71,19 @@
 								<div class="col-10">
 									<div class="showTimes__detail">
 										<span>${item.tensp}</span>
-										<h3 class="display-4">It's over</h3>
-										<p>European mercenaries searching for black powder become
-											embroiled in the defense of It's over of China against a
-											horde of monstrous creatures.</p>
-										<a href="#" class="d-block mb-4"> FULL SYNOPSIS <i
+										<h3 class="display-4">Sản Phẩm Hot</h3>
+										<p>Quần Đẹp Chất Lượng</p>
+										<a href='${updateNewURL}' class="d-block mb-4">CHI TIẾT <i
 											class="fa fa-angle-right"></i>
 										</a>
 										<div
 											class="showTimes__list d-flex justify-content-between align-items-center">
 											<div>
-												<i class="fa fa-clock"></i> <span class="spnView mr-2">VIEWING
-													TIMES</span>
-												<button class="btn mr-2">14:45</button>
-												<button class="btn mr-2">18:30</button>
-												<button class="btn mr-2">20:30</button>
-												<button class="btn mr-2">24:45</button>
+												<i class="fa fa-clock"></i> <span class="spnView mr-2">SIZE</span>
+												<button class="btn mr-2">S</button>
+												<button class="btn mr-2">M</button>
+												<button class="btn mr-2">L</button>
+												<button class="btn mr-2">XL</button>
 											</div>
 											<p class="showTimes__leght">
 												105 MINS <span
@@ -111,22 +111,19 @@
 								<div class="col-10">
 									<div class="showTimes__detail">
 										<span>${item.tensp}</span>
-										<h3 class="display-4">It's over</h3>
-										<p>European mercenaries searching for black powder become
-											embroiled in the defense of It's over of China against a
-											horde of monstrous creatures.</p>
-										<a href="#" class="d-block mb-4"> FULL SYNOPSIS <i
+										<h3 class="display-4">Sản Phẩm Hot</h3>
+										<p>Quần Đẹp Chất Lượng</p>
+										<a href='${updateNewURL}' class="d-block mb-4">CHI TIẾT <i
 											class="fa fa-angle-right"></i>
 										</a>
 										<div
 											class="showTimes__list d-flex justify-content-between align-items-center">
 											<div>
-												<i class="fa fa-clock"></i> <span class="spnView mr-2">VIEWING
-													TIMES</span>
-												<button class="btn mr-2">14:45</button>
-												<button class="btn mr-2">18:30</button>
-												<button class="btn mr-2">20:30</button>
-												<button class="btn mr-2">24:45</button>
+												<i class="fa fa-clock"></i> <span class="spnView mr-2">SIZE</span>
+												<button class="btn mr-2">S</button>
+												<button class="btn mr-2">M</button>
+												<button class="btn mr-2">L</button>
+												<button class="btn mr-2">XL</button>
 											</div>
 											<p class="showTimes__leght">
 												105 MINS <span
@@ -154,22 +151,19 @@
 								<div class="col-10">
 									<div class="showTimes__detail">
 										<span>${item.tensp}</span>
-										<h3 class="display-4">It's over</h3>
-										<p>European mercenaries searching for black powder become
-											embroiled in the defense of It's over of China against a
-											horde of monstrous creatures.</p>
-										<a href="#" class="d-block mb-4"> FULL SYNOPSIS <i
+										<h3 class="display-4">Sản Phẩm Hot</h3>
+										<p>Quần Đẹp Chất Lượng</p>
+										<a href='${updateNewURL}' class="d-block mb-4">CHI TIẾT <i
 											class="fa fa-angle-right"></i>
 										</a>
 										<div
 											class="showTimes__list d-flex justify-content-between align-items-center">
 											<div>
-												<i class="fa fa-clock"></i> <span class="spnView mr-2">VIEWING
-													TIMES</span>
-												<button class="btn mr-2">14:45</button>
-												<button class="btn mr-2">18:30</button>
-												<button class="btn mr-2">20:30</button>
-												<button class="btn mr-2">24:45</button>
+												<i class="fa fa-clock"></i> <span class="spnView mr-2">SIZE</span>
+												<button class="btn mr-2">S</button>
+												<button class="btn mr-2">M</button>
+												<button class="btn mr-2">L</button>
+												<button class="btn mr-2">XL</button>
 											</div>
 											<p class="showTimes__leght">
 												105 MINS <span
@@ -197,22 +191,19 @@
 								<div class="col-10">
 									<div class="showTimes__detail">
 										<span>${item.tensp}</span>
-										<h3 class="display-4">It's over</h3>
-										<p>European mercenaries searching for black powder become
-											embroiled in the defense of It's over of China against a
-											horde of monstrous creatures.</p>
-										<a href="#" class="d-block mb-4"> FULL SYNOPSIS <i
+										<h3 class="display-4">Sản Phẩm Hot</h3>
+										<p>Quần Đẹp Chất Lượng</p>
+										<a href='${updateNewURL}' class="d-block mb-4">CHI TIẾT <i
 											class="fa fa-angle-right"></i>
 										</a>
 										<div
 											class="showTimes__list d-flex justify-content-between align-items-center">
 											<div>
-												<i class="fa fa-clock"></i> <span class="spnView mr-2">VIEWING
-													TIMES</span>
-												<button class="btn mr-2">14:45</button>
-												<button class="btn mr-2">18:30</button>
-												<button class="btn mr-2">20:30</button>
-												<button class="btn mr-2">24:45</button>
+												<i class="fa fa-clock"></i> <span class="spnView mr-2">SIZE</span>
+												<button class="btn mr-2">S</button>
+												<button class="btn mr-2">M</button>
+												<button class="btn mr-2">L</button>
+												<button class="btn mr-2">XL</button>
 											</div>
 											<p class="showTimes__leght">
 												105 MINS <span
@@ -240,22 +231,21 @@
 								<div class="col-10">
 									<div class="showTimes__detail">
 										<span>${item.tensp}</span>
-										<h3 class="display-4">It's over</h3>
+										<h3 class="display-4">Sản Phẩm Hot</h3>
 										<p>European mercenaries searching for black powder become
-											embroiled in the defense of It's over of China against a
+											embroiled in the defense of Sản Phẩm Hot of China against a
 											horde of monstrous creatures.</p>
-										<a href="#" class="d-block mb-4"> FULL SYNOPSIS <i
+										<a href='${updateNewURL}' class="d-block mb-4">CHI TIẾT <i
 											class="fa fa-angle-right"></i>
 										</a>
 										<div
 											class="showTimes__list d-flex justify-content-between align-items-center">
 											<div>
-												<i class="fa fa-clock"></i> <span class="spnView mr-2">VIEWING
-													TIMES</span>
-												<button class="btn mr-2">14:45</button>
-												<button class="btn mr-2">18:30</button>
-												<button class="btn mr-2">20:30</button>
-												<button class="btn mr-2">24:45</button>
+												<i class="fa fa-clock"></i> <span class="spnView mr-2">SIZE</span>
+												<button class="btn mr-2">S</button>
+												<button class="btn mr-2">M</button>
+												<button class="btn mr-2">L</button>
+												<button class="btn mr-2">XL</button>
 											</div>
 											<p class="showTimes__leght">
 												105 MINS <span
@@ -283,22 +273,21 @@
 								<div class="col-10">
 									<div class="showTimes__detail">
 										<span>${item.tensp}</span>
-										<h3 class="display-4">It's over</h3>
+										<h3 class="display-4">Sản Phẩm Hot</h3>
 										<p>European mercenaries searching for black powder become
-											embroiled in the defense of It's over of China against a
+											embroiled in the defense of Sản Phẩm Hot of China against a
 											horde of monstrous creatures.</p>
-										<a href="#" class="d-block mb-4"> FULL SYNOPSIS <i
+										<a href='${updateNewURL}' class="d-block mb-4">CHI TIẾT <i
 											class="fa fa-angle-right"></i>
 										</a>
 										<div
 											class="showTimes__list d-flex justify-content-between align-items-center">
 											<div>
-												<i class="fa fa-clock"></i> <span class="spnView mr-2">VIEWING
-													TIMES</span>
-												<button class="btn mr-2">14:45</button>
-												<button class="btn mr-2">18:30</button>
-												<button class="btn mr-2">20:30</button>
-												<button class="btn mr-2">24:45</button>
+												<i class="fa fa-clock"></i> <span class="spnView mr-2">SIZE</span>
+												<button class="btn mr-2">S</button>
+												<button class="btn mr-2">M</button>
+												<button class="btn mr-2">L</button>
+												<button class="btn mr-2">XL</button>
 											</div>
 											<p class="showTimes__leght">
 												105 MINS <span

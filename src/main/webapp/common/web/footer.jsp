@@ -7,17 +7,20 @@
 			<div class="col-4" style="color: white">
 				<h3>ĐỊA CHỈ LIÊN HỆ</h3>
 				<div>
-					<p>HUB Hà Nội: Số 103, Đường Vạn Phúc, Phường Vạn Phúc, Quận Hà
-						Đông, TP. Hà Nội</p>
+					<p>Bình Thạnh: 475A Điện Biên Phủ, Phường 25, Bình Thạnh, Thành phố Hồ Chí Minh, Việt Nam</p>
 				</div>
 				<div>
-					<p>HUB Tp HCM: Lầu 1, Số 163 Trần Trọng Cung, Phường Tân Thuận
-						Đông, Quận 7, Tp. Hồ Chí Minh</p>
+					<p>TP Thủ Đức: 10/80C Xa lộ Hà Nội, Phường Tân Phú, Thủ Đức,
+						Thành phố Hồ Chí Minh, Việt Nam</p>
 				</div>
 				<div class="contact__map">
-					<iframe
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.8846533787164!2d106.73334061474871!3d10.743372392343998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752577f92fcbe1%3A0x1c3ba6383c131c47!2zMTYzIFRy4bqnbiBUcuG7jW5nIEN1bmcsIFTDom4gVGh14bqtbiDEkMO0bmcsIFF14bqtbiA3LCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1622877813049!5m2!1svi!2s"
-						style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+					<div class="gmap_canvas">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4206639905897!2d106.78291401462322!3d10.855574792267841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175276e7ea103df%3A0xb6cf10bb7d719327!2sHUTECH%20University%20-%20E%20Campus%20(SHTP)!5e0!3m2!1svi!2s!4v1623560706748!5m2!1svi!2s"
+							width="600" height="400" style="border: 0;" allowfullscreen=""
+							loading="lazy"></iframe>
+					</div>
+					<div class="sharethis-inline-share-buttons"></div>
 				</div>
 			</div>
 			<div class="col-4">
@@ -39,12 +42,6 @@
 						<li><a
 							href="https://www.coolmate.me/page/dieu-khoan-su-dung?itm_source=footer_nav"
 							title="KHUYẾN MẠI">Bảo mật và điều khoản sử dụng</a></li>
-						<li><a
-							href="https://www.coolmate.me/page/11-dich-vu-tai-coolmate-co-the-ban-chua-biet?itm_source=footer_nav"
-							title="DỊCH VỤ">Khách hàng hài lòng 100%</a></li>
-						<li><a
-							href="https://www.coolmate.me/page/san-pham-coolmate-duoc-san-xuat-nhu-the-nao?itm_source=footer_nav"
-							title="LIÊN HỆ">Nhà máy</a></li>
 					</ul>
 				</div>
 			</div>

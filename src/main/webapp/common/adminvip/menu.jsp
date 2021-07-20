@@ -29,7 +29,7 @@
 			<li><a href="<c:url value='/trang-chu'/>"> <i
 					class="zmdi zmdi-balance"></i> <span>Trở về trang chủ</span>
 			</a></li>
-
+			<li><div class="sharethis-inline-share-buttons" style="padding-top: 15px"></div></li>
 		</ul>
 
 	</div>

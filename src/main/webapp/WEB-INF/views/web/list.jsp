@@ -45,44 +45,41 @@
 			</form>
 			
 					<c:forEach var="item" items="${model.listResult}">
-
-						<div class="row showTimes__movie my-4">
-							<div class="col-2">
-								<c:url var="updateNewURL" value="/trang-chu/danh-sach">
-									<c:param name="id" value="${item.id}" />
-								</c:url>
-								<a href='${updateNewURL}'><img class="img-fluid" alt="hình"
-									src="../template/assets/img/thumbnail/${item.hinhanh}"></a>
-							</div>
-							<div class="col-10">
-								<div class="showTimes__detail">
-									<span>${item.tensp}</span>
-									<h3 class="display-4">It's over</h3>
-									<p>European mercenaries searching for black powder become
-										embroiled in the defense of It's over of China against a horde
-										of monstrous creatures.</p>
-									<a href="#" class="d-block mb-4"> FULL SYNOPSIS <i
-										class="fa fa-angle-right"></i>
-									</a>
-									<div
-										class="showTimes__list d-flex justify-content-between align-items-center">
-										<div>
-											<i class="fa fa-clock"></i> <span class="spnView mr-2">VIEWING
-												TIMES</span>
-											<button class="btn mr-2">14:45</button>
-											<button class="btn mr-2">18:30</button>
-											<button class="btn mr-2">20:30</button>
-											<button class="btn mr-2">24:45</button>
+						
+							<div class="row showTimes__movie my-4">
+								<div class="col-2">
+									<c:url var="updateNewURL" value="/trang-chu/danh-sach">
+										<c:param name="id" value="${item.id}" />
+									</c:url>
+									<a href='${updateNewURL}'><img class="img-fluid" alt="hình"
+										src="../template/assets/img/thumbnail/${item.hinhanh}"></a>
+								</div>
+								<div class="col-10">
+									<div class="showTimes__detail">
+										<span>${item.tensp}</span>
+										<h3 class="display-4">Sản Phẩm Hot</h3>
+										<p>Áo Đẹp Chất Lượng</p>
+										<a href='${updateNewURL}' class="d-block mb-4"> CHI TIẾT <i
+											class="fa fa-angle-right"></i>
+										</a>
+										<div
+											class="showTimes__list d-flex justify-content-between align-items-center">
+											<div>
+												<i class="fa fa-clock"></i> <span class="spnView mr-2">SIZE</span>
+												<button class="btn mr-2">S</button>
+												<button class="btn mr-2">M</button>
+												<button class="btn mr-2">L</button>
+												<button class="btn mr-2">XL</button>
+											</div>
+											<p class="showTimes__leght">
+												105 MINS <span
+													class="d-inline-block bg-dark text-white font-weight-bold ml-2">15</span>
+											</p>
 										</div>
-										<p class="showTimes__leght">
-											105 MINS <span
-												class="d-inline-block bg-dark text-white font-weight-bold ml-2">15</span>
-										</p>
 									</div>
 								</div>
 							</div>
-						</div>
-
+						
 					</c:forEach>
 				</div>
 				

@@ -1,10 +1,13 @@
 package vn.name.dcd.config;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Properties;
 
 import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor;
@@ -15,6 +18,8 @@ import org.springframework.orm.jpa.JpaVendorAdapter;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+
+import com.cloudinary.Cloudinary;
 
 @Configuration
 @EnableTransactionManagement
@@ -59,5 +64,23 @@ public class JPAConfig {
 
 		 
 		return properties;
+	}
+	@Value("${cloudinary.cloud_name}")
+	private String cloudName;
+	@Value("${cloudinary.api_key}")
+	private String apiKey;
+	@Value("${cloudinary.api_secret}")
+	private String apiSecret;
+	@Bean
+	public Cloudinary cloudinaryConfig()
+	{
+		Cloudinary cloudinary = null;
+		Map config= new HashMap<>();
+		config.put("CLOUDINARY_CLOUD_NAME", cloudName);
+		config.put("CLOUDINARY_API_KEY", apiKey);
+		config.put("CLOUDINARY_API_SECRET", apiSecret);
+		cloudinary = new Cloudinary(config);
+		return cloudinary;
+		
 	}
 }

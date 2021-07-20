@@ -15,7 +15,7 @@ public class JpaAuditingConfig {
 	public AuditorAware<String> auditorProvider() {
 		return new AuditorAwareImpl();
 	}
-//return name user login , fill for get in baseentity
+
 	public static class AuditorAwareImpl implements AuditorAware<String> {
 
 		@Override

@@ -26,8 +26,8 @@ public class CustomUserDetailsService implements UserDetailsService {
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 		AccountEntity accountEntity = accountRepository.findOneByUsernameAndStatus(username,
 				SystemConstant.ACTIVE_STATUS);
-		if (accountEntity == null) {
-			throw new UsernameNotFoundException("user not found");
+		if (accountEntity== null) {
+			throw new UsernameNotFoundException("Tài khoản không tồn tại hoặc đang bị khóa");
 
 		}
 		List<GrantedAuthority> authorities = new ArrayList<>();
@@ -35,15 +35,6 @@ public class CustomUserDetailsService implements UserDetailsService {
 			authorities.add(new SimpleGrantedAuthority(role.getCode())); // code: ADMIN; USER
 		}
 
-		// = SECCION o jdbc servlet
-		/*
-		 * User user = new User(accountEntity.getUsername(),
-		 * accountEntity.getPassword(), true, true, true, true, authorities );
-		 */
-		// custom MyAccount extend User of Spring to getFullname (DTO)
-		// put thong tin vao spring security => duy tri thong tin khi login vao he thong(Pricipal)
-		// put thong tin vao myAccount
-		// chuyen sang securityutils xu li tiep => customsuccess
 		MyAccount myAccount = new MyAccount(accountEntity.getUsername(), accountEntity.getPassword(), true, true, true,
 				true, authorities);
 		myAccount.setFullname(accountEntity.getFullname());

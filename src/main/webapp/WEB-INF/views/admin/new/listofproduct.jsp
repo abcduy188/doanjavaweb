@@ -16,13 +16,14 @@
 		<div class="container-fluid">
 
 			<!--Start Dashboard Content-->
+			<c:if test="${not empty message}">
+							<div id="alertP" class="alert alert-${alert} hide">${message}</div>
+						</c:if>
 			<form action="<c:url value='/quan-tri/danh-sach-san-pham'/>"
 				id="formSubmit" method="get">
 				<div class="row">
 					<div class="col-12 col-lg-12">
-						<c:if test="${not empty message}">
-							<div class="alert alert-${alert}">${message}</div>
-						</c:if>
+						
 						<div class="card">
 							<div class="card-header">
 								Danh sách sản phẩm
@@ -41,6 +42,7 @@
 										</div>
 									</div>
 								</div>
+								
 							</div>
 							<div class="table-responsive">
 								<table
@@ -62,9 +64,14 @@
 													class="checkitem" value="${item.id}"></td>
 												<td>${item.tensp}</td>
 
-												<td><img
+												<td>
+													<%-- <img
 													src="<c:url value='/template/assets/img/thumbnail/${item.hinhanh}'/>"
-													alt="${item.hinhanh}" height="20px" width="20px"></td>
+													alt="${item.hinhanh}" height="20px" width="20px"> --%> <img
+													alt=""
+													src="${pageContext.request.contextPath}/template/assets/img/thumbnail/${item.hinhanh} "
+													height="20px" width="20px">
+												</td>
 												<td>${item.categoryCode}</td>
 												<td><c:url var="updateNewURL"
 														value="/quan-tri/san-pham/chinh-sua">
@@ -74,7 +81,6 @@
 													href='${updateNewURL}'><i class="fa fa-pencil-square-o"
 														aria-hidden="true"></i> </a></td>
 											</tr>
-
 										</c:forEach>
 									</tbody>
 								</table>
@@ -133,7 +139,10 @@
 		function clearSearch() {
 			window.location.href = "${newURL}";
 		}
-
+		$(function() {
+			$('#alertP').removeClass('hide');
+			$('#alertP').delay(2000).slideUp(500);
+		});
 		$("#checkAll").change(function() {
 			$(".checkitem").prop("checked", $(this).prop("checked"))
 		});

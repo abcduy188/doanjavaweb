@@ -10,19 +10,19 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<div class="login100-pic js-tilt" data-tilt >
-					<img src="template/login/images/logodc2.png" alt="IMG" height="300px" width="850px" href="<c:url value='/trang-chu' />">
+				<div class="login100-pic js-tilt" data-tilt>
+					<img src="template/login/images/logodc2.png" alt="IMG"  href="<c:url value='/trang-chu' />">
 				</div>
 				
 				<form action="j_spring_security_check" id="formLogin" method="post">
 				<c:if test="${param.incorrectAccount!=null}">
-					<div class="alert alert-danger}">	
+					<div class="alert alert-danger" >	
 							Tài khoản hoặc mật khẩu không đúng
 					</div>
 				</c:if>
 				<c:if test="${param.accessDenied!=null}">
-					<div class="alert alert-danger}">	
-							Vô đc cc
+					<div class="alert alert-danger">	
+							Không phải người quản trị!!
 					</div>
 				</c:if>
 					<span class="login100-form-title"> LOGIN </span>

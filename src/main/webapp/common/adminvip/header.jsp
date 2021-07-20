@@ -20,13 +20,14 @@
 					<input type="text" class="form-control"
 						placeholder="Enter keywords" name="keyword" id="keyword"
 						value="${keyword}" required />
-					<button type="submit" class="btn btn-light px-5" value="Search">
+						<a href="#"><i class="icon-magnifier"></i></a>
+					<!-- <button type="submit" class="btn btn-light px-5" value="Search">
 						<i class="icon-magnifier"></i>
-					</button>
-					<button type="submit" class="btn btn-light px-5" value="Clear"
+					</button> -->
+					<!-- <button type="submit" class="btn btn-light px-5" value="Clear"
 						id="btnClear" onclick="clearSearch()">
 						<i class="zmdi zmdi-multiplication"></i>Cancel
-					</button>
+					</button> -->
 				</form>
 			</li>
 
@@ -115,7 +116,7 @@
 		</ul>
 		</nav> </header>
 	</div>
-	<script type="text/javascript">
+	<!-- <script type="text/javascript">
 		function clearSearch() {
 			window.location.href = "${newURL}";
 		}
@@ -131,6 +132,6 @@
 				$("#checkAll").prop("checked", true)
 			}
 		});
-	</script>
+	</script> -->
 </body>
 </html>

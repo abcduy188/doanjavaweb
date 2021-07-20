@@ -55,6 +55,9 @@
 <script src="https://cdn.ckeditor.com/4.16.1/full-all/ckeditor.js"></script>
 <!-- sweetalert delete -->
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script type="text/javascript"
+		src="https://platform-api.sharethis.com/js/sharethis.js#property=60b7a857cfae6e001124935b&product=inline-share-buttons"
+		async="async"></script>
 <body class="bg-theme bg-theme5">
 	<div id="wrapper">
 		<!-- header -->

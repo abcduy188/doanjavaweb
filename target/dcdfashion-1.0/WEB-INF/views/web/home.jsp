@@ -86,10 +86,10 @@
 					<div class="col-6 col-md-3">
 						<div class="newIn__item">
 							<div class="newIn__info">
-								<img class="img-fluid" src="template/img/n1.jpg" alt="">
+								<img class="img-fluid" src="template/img/somi1.jpg" alt="">
 								<div class="newIn__overlay"></div>
 								<div class="newIn__detail">
-									<i class="fa fa-play"></i> <a href="#">MORE INFORMATION</a>
+									<i class="fa fa-play"></i> <a href="<c:url value='trang-chu/danh-sach?id=20018'/>">MORE INFORMATION</a>
 									<p>Release: 7 Mar, 2020</p>
 								</div>
 							</div>
@@ -104,10 +104,10 @@
 					<div class="col-6  col-md-3">
 						<div class="newIn__item">
 							<div class="newIn__info">
-								<img class="img-fluid" src="template//img/n2.jpg" alt="">
+								<img class="img-fluid" src="template/img/polo1.jpg" alt="">
 								<div class="newIn__overlay"></div>
 								<div class="newIn__detail">
-									<i class="fa fa-play"></i> <a href="#">MORE INFORMATION</a>
+									<i class="fa fa-play"></i> <a href="<c:url value='trang-chu/danh-sach?id=20023'/>">MORE INFORMATION</a>
 									<p>Release: 7 Mar, 2020</p>
 								</div>
 							</div>
@@ -122,10 +122,10 @@
 					<div class="col-6  col-md-3">
 						<div class="newIn__item">
 							<div class="newIn__info">
-								<img class="img-fluid" src="template/img/n3.jpg" alt="">
+								<img class="img-fluid" src="template/img/aodai2.jpg" alt="">
 								<div class="newIn__overlay"></div>
 								<div class="newIn__detail">
-									<i class="fa fa-play"></i> <a href="#">MORE INFORMATION</a>
+									<i class="fa fa-play"></i> <a href="<c:url value='trang-chu/danh-sach?id=20028'/>">MORE INFORMATION</a>
 									<p>Release: 7 Mar, 2020</p>
 								</div>
 							</div>
@@ -140,10 +140,10 @@
 					<div class="col-6  col-md-3">
 						<div class="newIn__item">
 							<div class="newIn__info">
-								<img class="img-fluid" src="template/img/n4.jpg" alt="">
+								<img class="img-fluid" src="template/img/thethao2.jpg" alt="">
 								<div class="newIn__overlay"></div>
 								<div class="newIn__detail">
-									<i class="fa fa-play"></i> <a href="#">MORE INFORMATION</a>
+									<i class="fa fa-play"></i> <a href="<c:url value='trang-chu/danh-sach?id=20030'/>">MORE INFORMATION</a>
 									<p>Release: 7 Mar, 2020</p>
 								</div>
 							</div>

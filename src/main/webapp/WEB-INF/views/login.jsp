@@ -28,14 +28,14 @@
 					<span class="login100-form-title"> LOGIN </span>
 					<div class="wrap-input100 validate-input"
 						data-validate="Valid email is required">
-						<input class="input100" type="text" class="form-control" id="userName" name="j_username" placeholder="Tên đăng nhập"> <span class="focus-input100"></span>
+						<input class="input100" type="text" class="form-control" id="userName" name="j_username" placeholder="Tên đăng nhập" required> <span class="focus-input100"></span>
 						<span class="symbol-input100"> <i class="fa fa-user-circle"
 							aria-hidden="true"></i>
 						</span>
 					</div>
 					<div class="wrap-input100 validate-input"
 						data-validate="Password is required">
-						<input class="input100" type="password" class="form-control" id="password" name="j_password" placeholder="Mật khẩu"> <span class="focus-input100"></span>
+						<input class="input100" type="password" class="form-control" id="password" name="j_password" placeholder="Mật khẩu" required> <span class="focus-input100"></span>
 						<span class="symbol-input100"> <i class="fa fa-lock"
 							aria-hidden="true"></i>
 						</span>

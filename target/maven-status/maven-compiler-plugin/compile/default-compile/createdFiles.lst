@@ -4,8 +4,10 @@ vn\name\dcd\api\web\HomeAPI.class
 vn\name\dcd\service\impl\CustomUserDetailsService.class
 vn\name\dcd\DTO\MyAccount.class
 vn\name\dcd\DTO\AbstractDTO.class
+vn\name\dcd\utils\CommonConstant.class
 vn\name\dcd\repository\AccountRepository.class
 vn\name\dcd\entity\AccountEntity.class
+vn\name\dcd\utils\MessageUltis.class
 vn\name\dcd\repository\ProductRepository.class
 vn\name\dcd\DTO\ProductDTO.class
 vn\name\dcd\entity\RoleEntity.class

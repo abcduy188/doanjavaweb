@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java"%>
 <%@include file="/common/taglib.jsp"%>
 <c:url var="newURL" value="/quan-tri/danh-sach-san-pham" />
-<c:url var="editNewURL" value="/quan-tri/bai-viet/chinh-sua" />
+<c:url var="editNewURL" value="/quan-tri/san-pham/chinh-sua" />
 <c:url var="newAPI" value="/api/product" />
 <!DOCTYPE html>
 <html>
@@ -15,7 +15,7 @@
 	<div class="content-wrapper">
 		<div class="container-fluid">
 			<c:if test="${not empty message}">
-				<div class="alert alert-${alert}">${message}</div>
+				<div id="alert" class="alert alert-${alert} hide">${message}</div>
 			</c:if>
 			<div class="col-lg-6">
 				<div class="card">
@@ -92,8 +92,12 @@
 		$(document).ready(function() {
 			editorcontent = CKEDITOR.replace('content');
 			editormota = CKEDITOR.replace('mota');
+			
 		});
-
+		$(function(){
+			$('#alert').removeClass('hide');
+			$('#alert').delay(2000).slideUp(500);
+		});
 		$('#btnAddOrUpdateNew').click(function(e) {
 			e.preventDefault();
 			var data = {};
@@ -127,6 +131,9 @@
 					}
 				};
 				reader.readAsDataURL(files);
+			}
+			else {
+				alert('Please Upload File');
 			}
 
 		});

@@ -3,7 +3,7 @@
 	<decorator name="web" page="web.jsp">
 		<pattern>/*</pattern>
 	</decorator>
-	<decorator name="admin" page="admin.jsp">
+	<decorator name="admin" page="adminvip.jsp">
 		<pattern>/quan-tri*</pattern>
 	</decorator>
 	<decorator name="login" page="login.jsp">

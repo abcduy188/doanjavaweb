@@ -159,7 +159,20 @@
 			</div>
 		</div>
 	</section>
-
+<section class="contact">
+		<div class="container">
+		<h2>Customer Reviews</h2>
+			<div class="contact__form">
+				<form>
+					<input type="text" placeholder="Name"> <input type="text"
+						placeholder="Last Name"> <input type="email"
+						placeholder="Email"> <input type="tel" placeholder="Phone">
+					<textarea placeholder="Message" id="" cols="30" rows="10"></textarea>
+					<button class="btn btn-danger" style="margin-bottom:10px">Send</button>
+				</form>
+			</div>
+		</div>
+	</section>
 
 
 
